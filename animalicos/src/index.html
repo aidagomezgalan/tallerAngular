@@ -14,13 +14,22 @@
 
 <body ng-app="app" ng-strict-di>
 
+    <header-animals></header-animals>
+    <view-main></view-main>
+    <animals-list></animals-list>
+    <animals-card></animals-card>
+    <footer-animals></footer-animals>
 
 
     <!-- angular -->
     <script src="vendor/angular.min.js"></script>
 
     <!-- our app -->
-    <script src="app/app.js"></script>
+    <script src="app/components/commons/header/header.js"></script>
+    <script src="app/components/commons/footer/footer.js"></script>
+    <script src="app/components/main/view-main.js"></script>
+    <script src="app/components/main/animalsList/animal-list.js"></script>
+    <script src="app/components/main/animalsCard/animal-card.js"></script>
 
 
 </body>
