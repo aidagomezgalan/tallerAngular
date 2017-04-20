@@ -1,0 +1,19 @@
+{
+  "name": "prueba",
+  "version": "1.0.0",
+  "description": "taller de Angular",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aidagomezgalan/tallerAngular.git"
+  },
+  "author": "Aida Gómez Galán",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/aidagomezgalan/tallerAngular/issues"
+  },
+  "homepage": "https://github.com/aidagomezgalan/tallerAngular#readme"
+}
