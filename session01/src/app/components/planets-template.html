@@ -1,0 +1,19 @@
+<article>
+	<div ng-if="planets.falseProperty">
+        <p>Si lo definimos como true si se mostraría.</p>
+    </div>
+
+	<h3>{{planets.mainTitle}}</h3>
+
+	<button ng-click= "planets.setMainTitle()">Cambiar propiedad mainTitle</button>
+
+    <ul>
+        <li ng-repeat= "item in planets.solarSystem">{{item.name}}</li>
+    </ul>
+
+    <child-component
+    	prop-string= "Propiedad string con valor definido aqui (template padre)"
+    	prop-interpretada= "planets.regaloHijo"
+    	prop-method= "planets.setRegaloHijo()"
+    ></child-component>
+</article>

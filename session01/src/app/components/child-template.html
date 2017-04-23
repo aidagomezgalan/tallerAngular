@@ -1,0 +1,14 @@
+<article>
+	<h2>SOY EL COMPONENTE HIJO:</h2>
+	<p>Propiedad que no se interpreta: {{child.propString}}</p>
+
+    <p>Propiedad interpetada: {{child.propInterpretada}}</p>
+
+    <p>Este botón lanza un método definido en el padre:
+        <button ng-click="child.propMethod()">cambiar regaloHijo</button>
+    </p>
+
+    <ul>
+        <li ng-repeat="film in child.allFilms">{{film.title}}</li>
+
+</article>

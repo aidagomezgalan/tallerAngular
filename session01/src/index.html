@@ -1,21 +1,21 @@
 <!doctype html>
-<html lang="">
 
+<html>
+	
 <head>
-    <base href="/">
+	<base href="/">
     <meta charset="utf-8">
 
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>angular 1.6 workshop</title>
+    <title>Session</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width">
-
 </head>
 
 <body ng-app="app" ng-strict-di>
-
-    <hello-angular></hello-angular>
-    <my-question></my-question>
+	<hello-angular></hello-angular>
+	<hr>
+    <planets-component></planets-component>
 
     <!-- angular -->
     <script src="vendor/angular.min.js"></script>
@@ -24,9 +24,10 @@
     <script src="app/app.js"></script>
 
     <script src="app/components/hello-angular.js"></script>
-    <script src="app/components/my-question.js"></script>
-
+    <script src="app/components/planets-component.js"></script>
+    <script src="app/components/child-component.js"></script>
+    <script src="app/services/my-factory.js"></script>
 </body>
 
-
 </html>
+
