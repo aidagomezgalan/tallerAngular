@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/aidagomezgalan/tallerAngular/issues"
   },
-  "homepage": "https://github.com/aidagomezgalan/tallerAngular#readme"
+  "homepage": "https://github.com/aidagomezgalan/tallerAngular#readme",
+  "dependencies": {
+    "angular-ui-router": "^0.4.2"
+  }
 }

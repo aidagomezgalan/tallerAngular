@@ -1,14 +1,20 @@
 (function (angular){
     angular.module('app').component('animalsList',{
-        templateUrl: 'app/components/main/animalsList/animals_list-template.html',
-        controller: animalsList,
+        templateUrl: 'app/components/main/animalsList/animals-list-template.html',
+        controller: ['$state', 'animalsFactory', animalsList],
         controllerAs: 'animalsList'
     });
 
-    function animalsList (){
-        vm = this;
+    function animalsList ($state, animalsFactory){
+        var vm = this;
 
-        vm.allAnimals = 
+        vm.$onInit = function(){
+        	vm.allAnimals = animalsFactory.getAllAnimals();
+        };
+
+        vm.goToDetail = function (){
+            $state.go('detail');
+        }
     }
 
 }) (angular);

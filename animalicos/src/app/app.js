@@ -1,7 +1,8 @@
 'use strict';
 
 (function (angular) {
-
-	angular.module('app',[]);
+	var projectDependencies = ['ui-router']
+	
+	angular.module('app',projectDependencies);
 
 })(angular);

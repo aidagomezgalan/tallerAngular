@@ -1,12 +1,7 @@
-<header>
-	<h1>Hello Angular 1.6</h1>
-</header>
-
 <article>
-    <child-component
-        prop-string = "Ala bulieeeeé!!!"
-        prop-interpretada = "hello.awesome" 
-        prop-method = "hello.setAwesome()"
-    ></child-component>
-   </article>
-
+    <animals-card
+    	ng-repeat="item in animalsList.allAnimals"
+    	item-animal="item"
+    	ng-click="animalsList.goToDetail()"
+    ></animals-card>
+</article>
